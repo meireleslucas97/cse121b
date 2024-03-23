@@ -19,18 +19,23 @@ function addNumbers() {
 document.getElementById("addNumbers").addEventListener("click", addNumbers);
 
 /* Function Expression - Subtract Numbers */
-const subtract = function(number1, number2) {
+function subtract(number1, number2) {
     return number1 - number2;
-};
+}
 
-const subtractNumbers = function() {
+function subtractNumbers() {
     const number1 = parseFloat(document.getElementById('subtract1').value);
     const number2 = parseFloat(document.getElementById('subtract2').value);
 
+    if (isNaN(number1) || isNaN(number2)) {
+        alert("Por favor, insira valores numéricos válidos para subtrair.");
+        return; 
+    }
+
     const difference = subtract(number1, number2);
 
-    document.getElementById('difference').textContent = difference;
-};
+    document.getElementById('difference').value = difference;
+}
 
 document.getElementById('subtractNumbers').addEventListener('click', subtractNumbers);
 
