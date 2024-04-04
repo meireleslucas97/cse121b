@@ -7,7 +7,10 @@
 
 /* HTML Selectors */
 body {
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -311,5 +314,47 @@ footer {
         margin: 0 auto;
         max-width: 950px;
     }
+}
 
+/* Additional CSS */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.search-container input[type="text"] {
+    margin-right: 2px;
+    margin-top: 10px;
+}
+
+.weather-container {
+    text-align: center;
+    margin-top: 50px; 
 }
